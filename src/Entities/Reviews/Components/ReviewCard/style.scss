@@ -1,0 +1,111 @@
+@import "../../../../Shared/Style/globalStyleVariables.scss";
+
+.reviewCard {
+  box-sizing: border-box;
+  background-color: $baseColor;
+  border-radius: 20.12px;
+  box-shadow: 0px 20.07px 30.1px 0px rgba(50, 49, 66, 0.1);
+  overflow: hidden;
+  padding: 38px 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  justify-self: stretch;
+  color: #5e5d5d;
+  margin: 0;
+  width: 574px;
+  max-height: 336px;
+}
+.reviewCard__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  text-align: left;
+  gap: 20px;
+  position: relative;
+  transform: translateY(0);
+  transition: transform 1s ease;
+  transition: height 1s ease;
+  transition: margin 01s ease;
+  margin-bottom: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 58px;
+    height: 44px;
+    transform: translateY(-50%);
+    background: url(./Assets/quotesSVG.svg) top center no-repeat;
+    background-size: cover;
+  }
+}
+.reviewCard__header_hidden {
+  transform: translateY(1000px);
+  height: 0;
+  margin-bottom: 0;
+}
+.reviewCard__avatar {
+}
+.reviewCard__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.reviewCard__userName {
+  font-family: Poppins;
+  font-size: 20.89px;
+  font-weight: 500;
+  line-height: 31.34px;
+  text-align: left;
+}
+.reviewCard__date {
+  font-family: Inter;
+  font-size: 16.71px;
+  font-weight: 400;
+  line-height: 26.12px;
+  text-align: left;
+}
+.reviewCard__main {
+  height: 105px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26.12px;
+  text-align: justify;
+  text-indent: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  &::after,
+  &::before {
+    content: "\0022";
+    position: absolute;
+  }
+  &::after {
+    top: 0;
+    left: -10px;
+  }
+  &::before {
+    right: 1px;
+    bottom: 0;
+  }
+}
+.reviewCard__footer {
+  display: flex;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+}
+.reviewCard__rating {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,9 @@
+@import "../../../../Shared/Style/globalStyleVariables.scss";
+
+.purchaseCardList {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 10.7px;
+}

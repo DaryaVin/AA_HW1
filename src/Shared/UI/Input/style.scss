@@ -1,0 +1,64 @@
+@import "../../Style/globalStyleVariables.scss";
+
+.input__wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 17px;
+  cursor: text;
+  padding: 5px;
+  display: inline-flex;
+  box-sizing: border-box;
+  border-radius: 14px;
+  outline: none;
+  line-height: 18px;
+  color: $primaryColor;
+  &::placeholder,
+  *::placeholder {
+    color: $textColor_light;
+  }
+  &:focus,
+  &:focus-within {
+    border: 2px solid $primaryColor;
+    outline: 1px solid $baseColor;
+    background-color: $baseColor;
+    color: $primaryColor;
+  }
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 17px;
+  flex-grow: 1;
+  color: inherit;
+  line-height: inherit;
+  font: inherit;
+  background-color: transparent;
+}
+
+.input__wrap_theme_base {
+  border: 2px solid $primaryColor;
+  background-color: $baseColor;
+  &::placeholder {
+    color: $textColor;
+  }
+  &.input__wrap_disabled {
+    background-color: $baseColor_dark;
+    border-color: $grayColor;
+    color: $textColor_light;
+  }
+}
+.input__wrap_theme_grey {
+  background-color: $baseColor_dark;
+  border: 0;
+  color: $textColor;
+  border: 2px solid $baseColor_dark;
+  &.input__wrap_disabled {
+    color: $textColor_light;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../Style/globalStyleVariables.scss";
+
+.button {
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 15px;
+  overflow: visible;
+  padding: 15px 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 18px;
+  border-width: 1px;
+  outline-color: $accentColor;
+  transition: all 0.3s linear;
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.button_theme_textOnly {
+  background: none;
+  border: none;
+  color: $textColor;
+}
+
+.button_theme_fillBcg {
+  background-color: $primaryColor;
+  color: $baseColor;
+  border: 1px solid $primaryColor;
+  &:hover:not(:disabled) {
+    background-color: transparent;
+    color: $primaryColor;
+  }
+}
+
+.button_theme_withBorder {
+  background-color: transparent;
+  border-color: $primaryColor;
+  color: $primaryColor;
+  border-style: solid;
+}

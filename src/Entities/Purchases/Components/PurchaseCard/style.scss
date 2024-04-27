@@ -1,0 +1,57 @@
+@import "../../../../Shared/Style/globalStyleVariables.scss";
+
+.purchaseCard {
+  box-sizing: border-box;
+  background-color: $baseColor;
+  width: 345.17px;
+  border-radius: 12.04px;
+  box-shadow: 0px 20.07px 30.1px 0px rgba(70, 70, 70, 0.1);
+  overflow: hidden;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: #323142;
+  gap: 19px;
+}
+
+.purchaseCard__img {
+}
+.purchaseCard__infoWrap {
+  flex-grow: 1;
+}
+.purchaseCard__name {
+  font-family: Poppins;
+  font-size: 19.06px;
+  font-weight: 600;
+  line-height: 26.69px;
+  text-align: left;
+  margin: 0;
+  color: #323142;
+}
+.purchaseCard__status {
+  font-family: Poppins;
+  font-size: 12.04px;
+  font-weight: 500;
+  line-height: 16.86px;
+  text-align: left;
+  margin-top: 4.11px;
+}
+.purchaseCard__status_val_Deliveried {
+  color: #309d5b;
+}
+.purchaseCard__status_val_Celceled {
+  color: #f1534e;
+}
+.purchaseCard__date {
+  font-family: Poppins;
+  font-size: 13.04px;
+  font-weight: 500;
+  line-height: 18.26px;
+  text-align: left;
+  color: #acadb9;
+  display: flex;
+  justify-content: end;
+  margin-top: -2.5px;
+}

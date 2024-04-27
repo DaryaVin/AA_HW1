@@ -1,0 +1,86 @@
+import { templateAPI } from "../../../Shared";
+import { RestaurantItem } from "../Model/restaurantsType";
+
+const data: RestaurantItem[] = [
+  {
+    healthCategory: "Trending",
+    name: "Ledner Group",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/1.jpg",
+    time: 38,
+    raiting: 5,
+    id: "1",
+  },
+  {
+    healthCategory: "Healthy",
+    name: "Koelpin and Sons",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/2.jpg",
+    time: 93,
+    raiting: 4.5,
+    id: "2",
+  },
+  {
+    healthCategory: "Trending",
+    name: "Franey LLC",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/1.jpg",
+    time: 42,
+    raiting: 3.5,
+    id: "3",
+  },
+  {
+    healthCategory: "Supreme",
+    name: "Parker, Brown and Price",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/2.jpg",
+    time: 47,
+    raiting: 4.7,
+    id: "4",
+  },
+  {
+    healthCategory: "Supreme",
+    name: "Schulist, Romaguera and Bins",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/1.jpg",
+    time: 88,
+    raiting: 4.7,
+    id: "5",
+  },
+  {
+    healthCategory: "Supreme",
+    name: "Corkery - Kirlin",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/2.jpg",
+    time: 94,
+    raiting: 5,
+    id: "6",
+  },
+  {
+    healthCategory: "Healthy",
+    name: "Larkin, Bartell and Johnson",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/1.jpg",
+    time: 6,
+    raiting: 4.8,
+    id: "7",
+  },
+  {
+    healthCategory: "Trending",
+    name: "Langosh Inc",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/2.jpg",
+    time: 58,
+    raiting: 4.2,
+    id: "8",
+  },
+  {
+    healthCategory: "Supreme",
+    name: "Abernathy - Wiegand",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/1.jpg",
+    time: 27,
+    raiting: 4.9,
+    id: "9",
+  },
+  {
+    healthCategory: "Healthy",
+    name: "Hane, Zemlak and Stoltenberg",
+    img: "https://live.verstaem.online/eatly/src/img/restaurants/2.jpg",
+    time: 43,
+    raiting: 5,
+    id: "10",
+  },
+];
+export const restaurantsAPI = templateAPI(data);

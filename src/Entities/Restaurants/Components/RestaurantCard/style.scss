@@ -1,0 +1,61 @@
+@import "../../../../Shared/Style/globalStyleVariables.scss";
+
+.restaurantCard {
+  box-sizing: border-box;
+  background-color: $baseColor;
+  width: 395.99px;
+  border-radius: 35px;
+  border: 1.44px solid #f4f4f6;
+  box-shadow: 6.85px 82.18px 41.09px 0px rgba(229, 229, 229, 0.7);
+  opacity: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.restaurantCard__infoWrap {
+  padding: 10px 10px 17px 35px;
+}
+
+.restaurantCard__img {
+  width: 100%;
+}
+.restaurantCard__healthCategoryWrap {
+}
+
+.restaurantCard__name {
+  font-family: "Poppins";
+  font-size: 23.05px;
+  font-weight: 600;
+  line-height: 37.46px;
+  text-align: left;
+  margin: 0;
+  color: #323142;
+}
+.restaurantCard__info {
+}
+
+.restaurantCard__likeBtn {
+  position: absolute;
+  bottom: 23px;
+  right: 23px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $primaryColor_superLight;
+  color: $bcgColor_dark;
+  transition: color 0.3s ease;
+}
+
+.restaurantCard__likeBtn_isLike {
+  color: $primaryColor;
+}

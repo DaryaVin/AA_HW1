@@ -1,0 +1,21 @@
+@import "../../Style/globalStyleVariables.scss";
+
+.timeRatingInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 6.45px;
+  color: #8e97a6;
+}
+.timeRatingInfo__time {
+}
+.timeRatingInfo__raiting {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10.74px;
+}
+.timeRatingInfo__raitingIcon {
+  color: $primaryColor;
+}

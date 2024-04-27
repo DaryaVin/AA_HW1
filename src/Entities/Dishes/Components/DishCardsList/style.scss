@@ -1,0 +1,8 @@
+@import "../../../../Shared/Style/globalStyleVariables.scss";
+
+.dishCardsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}

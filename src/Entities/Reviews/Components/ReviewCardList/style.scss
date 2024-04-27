@@ -1,0 +1,45 @@
+@import "../../../../Shared/Style/globalStyleVariables.scss";
+
+.reviewCardList {
+  position: relative;
+  width: 100%;
+  height: 336px;
+}
+.reviewCardList__gallery {
+  width: 100%;
+}
+.reviewCardList__reviewsList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  margin-top: 0;
+  margin-bottom: 0;
+  // margin-left: -620px;
+  transition: margin 1s ease;
+  padding: 0;
+}
+.reviewCardList__item {
+}
+.reviewCardList__dotsList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 620px);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.reviewCardList__dot {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.reviewCardList__dotBtn {
+  height: 11px;
+  background-color: $primaryColor;
+  border-radius: 50px;
+  border: 0;
+  outline-color: $accentColor;
+  width: 100%;
+}

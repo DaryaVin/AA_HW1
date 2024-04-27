@@ -1,0 +1,55 @@
+@import "../../../../Shared/Style/globalStyleVariables.scss";
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dashboard__purchaseWrap {
+}
+
+.dashboard__header {
+  font-family: Poppins;
+  font-size: 50.92px;
+  font-weight: 700;
+  line-height: 58.2px;
+  text-align: left;
+
+  color: rgba(32, 31, 31, 1);
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 18px;
+  margin-bottom: 16px;
+}
+.dashboard__specHeader {
+  color: rgba(92, 78, 174, 1);
+}
+
+.dashboard_board {
+  background-color: $baseColor;
+  border: 1.57px solid rgba(237, 242, 247, 1);
+  border-radius: 25.13px;
+  padding: 32px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dashboard__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard__infoHead {
+  font-family: Inter;
+  font-size: 28.27px;
+  font-weight: 800;
+  line-height: 38.17px;
+  letter-spacing: 0.3141176700592041px;
+  text-align: left;
+  color: rgba(26, 32, 44, 1);
+  margin: 0;
+  margin-bottom: 30px;
+}
+.dashboard__select {
+}

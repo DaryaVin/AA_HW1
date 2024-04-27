@@ -1,0 +1,77 @@
+@import "../../Shared/Style/globalStyleVariables.scss";
+
+.decorComponent {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 133px 85px 108px;
+  box-sizing: border-box;
+  width: fit-content;
+  &::after,
+  &::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+  }
+  &::before {
+    @include threeStrips1;
+    top: 0;
+    right: 0;
+  }
+  &::after {
+    @include threeStrips2;
+    bottom: 26px;
+    left: -6px;
+  }
+}
+.decorComponent__dishWrap {
+  display: inline-flex;
+  position: relative;
+  z-index: 0;
+  &::before,
+  &::after {
+    content: "";
+    color: $primaryColor;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  &::before {
+    border-radius: 50%;
+    top: -12px;
+    left: 20px;
+    right: -16px;
+    bottom: 28px;
+    background-color: $primaryColor;
+  }
+  &::after {
+    @include Spiralpfeil;
+    height: 101px;
+    right: -66px;
+    top: 49px;
+  }
+}
+.decorComponent__dish {
+  z-index: 1;
+}
+.decorComponent__graph {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.decorComponent__purchase {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+}
+
+.decorComponent_isWithAdditionalElements {
+  &::after,
+  &::before,
+  & *::after,
+  & *::before {
+    opacity: 1;
+  }
+}

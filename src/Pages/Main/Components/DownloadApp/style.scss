@@ -1,0 +1,79 @@
+@import "../../../../Shared/Style/globalStyleVariables.scss";
+
+.downloadApp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  gap: 150px;
+}
+.downloadApp__imgWrap {
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 30px;
+  &::after {
+    content: "";
+    @include threeStrips2;
+    position: absolute;
+    right: -30px;
+    top: 20px;
+    transform: rotate(180deg);
+  }
+}
+.downloadApp__img {
+}
+.downloadApp__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.downloadApp__header {
+  font-family: Poppins;
+  font-size: 50.92px;
+  font-weight: 700;
+  line-height: 58.2px;
+  text-align: left;
+
+  color: rgba(32, 31, 31, 1);
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 18px;
+  margin-bottom: 16px;
+}
+.downloadApp__specHeader {
+  color: rgba(92, 78, 174, 1);
+}
+
+.downloadApp__list {
+  font-family: Inter;
+  font-size: 20.33px;
+  font-weight: 400;
+  line-height: 30.5px;
+  text-align: left;
+  color: rgba(103, 103, 103, 1);
+}
+
+.downloadApp__btnWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+}
+
+.downloadApp__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 90px;
+  position: relative;
+  &::after {
+    content: "";
+    @include Spiralpfeil1;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+  }
+}

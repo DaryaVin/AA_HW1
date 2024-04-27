@@ -1,0 +1,38 @@
+@import "../../Style/globalStyleVariables.scss";
+
+.rateBox {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.rateBox__item {
+  position: relative;
+}
+.rateBox__wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.rateBox__wrapFullStar {
+  color: $accentColor;
+}
+.rateBox__wrapEmptyStar {
+  color: $baseColor_dark;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-items: end;
+}
+.rateBox__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

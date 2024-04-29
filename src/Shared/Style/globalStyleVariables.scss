@@ -23,6 +23,11 @@ $accentColor: #fbad18;
 }
 @font-face {
   font-family: Poppins;
+  src: url("../Assets/Font/Poppins/Poppins-Bold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: Poppins;
   src: url("../Assets/Font/Poppins/Poppins-SemiBold.ttf");
   font-weight: 600;
 }

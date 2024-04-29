@@ -3,7 +3,8 @@
 .purchaseCard {
   box-sizing: border-box;
   background-color: $baseColor;
-  width: 345.17px;
+  // max-width: 345.17px;
+  width: 100%;
   border-radius: 12.04px;
   box-shadow: 0px 20.07px 30.1px 0px rgba(70, 70, 70, 0.1);
   overflow: hidden;
@@ -15,8 +16,11 @@
   color: #323142;
   gap: 19px;
 }
-
+.purchaseCard__imgWrap {
+  max-width: 23%;
+}
 .purchaseCard__img {
+  max-width: 100%;
 }
 .purchaseCard__infoWrap {
   flex-grow: 1;
@@ -54,4 +58,19 @@
   display: flex;
   justify-content: end;
   margin-top: -2.5px;
+}
+
+@media (max-width: 1024px) {
+  .purchaseCard__name {
+    font-size: 13.56px;
+    line-height: 18.98px;
+  }
+  .purchaseCard__status {
+    font-size: 8.56px;
+    line-height: 11.99px;
+  }
+  .purchaseCard__date {
+    font-size: 9.28px;
+    line-height: 12.99px;
+  }
 }

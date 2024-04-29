@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import img from "./Assets/MobileScreen.jpg";
-import { Button } from "../../../../Shared";
+import { Button, Header, SpecHeader } from "../../../../Shared";
 
 export const DownloadApp = () => {
   return (
@@ -10,10 +10,11 @@ export const DownloadApp = () => {
         <img className="downloadApp__img" src={img} alt="Фото телефона" />
       </div>
       <div className="downloadApp__info">
-        <h2 className="downloadApp__header">
-          Premium <span className="downloadApp__specHeader">Quality</span> For
-          Your Health
-        </h2>
+        <Header number={2} className="downloadApp__header">
+          Premium{" "}
+          <SpecHeader className="downloadApp__specHeader">Quality</SpecHeader>{" "}
+          For Your Health
+        </Header>
         <ul className="downloadApp__list">
           <li className="downloadApp__item">
             Premium quality food is made with ingredients that are packed with

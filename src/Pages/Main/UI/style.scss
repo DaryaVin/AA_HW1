@@ -1,0 +1,60 @@
+@import "../../../Shared/Style/globalStyleVariables.scss";
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+}
+
+.mainPage__conteiner {
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.mainPage__hero {
+  padding-top: 47px;
+  padding-bottom: 83px;
+}
+.mainPage__downloadApp {
+  padding-top: 101px;
+  padding-bottom: 119px;
+  border-bottom: 1px solid #cbcbcb;
+}
+.mainPage__restaurantsBlock,
+.mainPage__dishesBlock,
+.mainPage__dashboard {
+  padding-top: 100px;
+  padding-bottom: 135px;
+  border-bottom: 1px solid #cbcbcb;
+}
+.mainPage__reviewsBlock {
+  padding-top: 114px;
+  padding-bottom: 185px;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: clip;
+}
+.mainPage__subscrible {
+  padding-bottom: 155px;
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .mainPage__conteiner {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .mainPage__reviewsBlock {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 375px) {
+}

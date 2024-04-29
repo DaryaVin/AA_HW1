@@ -4,7 +4,7 @@ import { DishItem } from "../Model/dishesType";
 const data: DishItem[] = [
   {
     price: 12.99,
-    name: "Fantastic Metal Shirt",
+    name: "Chicken Hell",
     img: "https://live.staticflickr.com/65535/53679902793_f5fd052f40_m.jpg",
     healthCategory: "Trending",
     cookingTime: 62,
@@ -13,7 +13,7 @@ const data: DishItem[] = [
   },
   {
     price: 14.99,
-    name: "Sleek Soft Gloves",
+    name: "Chicken Hell",
     img: "https://live.staticflickr.com/65535/53679902793_f5fd052f40_m.jpg",
     healthCategory: "Healthy",
     cookingTime: 63,
@@ -22,7 +22,7 @@ const data: DishItem[] = [
   },
   {
     price: 18.99,
-    name: "Small Steel Salad",
+    name: "Swe Dish",
     img: "https://live.staticflickr.com/65535/53680035689_4116d6ae56_m.jpg",
     healthCategory: "Supreme",
     cookingTime: 36,
@@ -31,7 +31,7 @@ const data: DishItem[] = [
   },
   {
     price: 13.99,
-    name: "Handcrafted Cotton Shirt",
+    name: "Swe Dish",
     img: "https://live.staticflickr.com/65535/53679902793_f5fd052f40_m.jpg",
     healthCategory: "Trending",
     cookingTime: 17,
@@ -40,7 +40,7 @@ const data: DishItem[] = [
   },
   {
     price: 12.99,
-    name: "Small Rubber Computer",
+    name: "Chicken Hell",
     img: "https://live.staticflickr.com/65535/53680035689_4116d6ae56_m.jpg",
     healthCategory: "Healthy",
     cookingTime: 67,
@@ -49,7 +49,7 @@ const data: DishItem[] = [
   },
   {
     price: 15.99,
-    name: "Handmade Granite Car",
+    name: "Swe Dish",
     img: "https://live.staticflickr.com/65535/53680035804_43ce8fbc25_m.jpg",
     healthCategory: "Trending",
     cookingTime: 35,
@@ -58,7 +58,7 @@ const data: DishItem[] = [
   },
   {
     price: 12.99,
-    name: "Awesome Cotton Fish",
+    name: "Chicken Hell",
     img: "https://live.staticflickr.com/65535/53680035689_4116d6ae56_m.jpg",
     healthCategory: "Supreme",
     cookingTime: 50,
@@ -67,7 +67,7 @@ const data: DishItem[] = [
   },
   {
     price: 16.89,
-    name: "Elegant Metal Table",
+    name: "Swe Dish",
     img: "https://live.staticflickr.com/65535/53680035689_4116d6ae56_m.jpg",
     healthCategory: "Supreme",
     cookingTime: 17,
@@ -76,7 +76,7 @@ const data: DishItem[] = [
   },
   {
     price: 13.88,
-    name: "Sleek Cotton Pants",
+    name: "Chicken Hell",
     img: "https://live.staticflickr.com/65535/53679902793_f5fd052f40_m.jpg",
     healthCategory: "Healthy",
     cookingTime: 33,
@@ -85,7 +85,7 @@ const data: DishItem[] = [
   },
   {
     price: 14.99,
-    name: "Refined Fresh Shoes",
+    name: "Swe Dish",
     img: "https://live.staticflickr.com/65535/53680035804_43ce8fbc25_m.jpg",
     healthCategory: "Trending",
     cookingTime: 58,

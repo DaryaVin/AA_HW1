@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+import { Header } from "../../../../Shared";
 
 const helpWrap = (head: string, discription: string) => {
   return (
@@ -13,7 +14,9 @@ const helpWrap = (head: string, discription: string) => {
 export const Features = () => {
   return (
     <section className="features">
-      <h2 className="features__header">features</h2>
+      <Header className="features__header" number={2} isHidden={true}>
+        features
+      </Header>
       <dl className="features__list">
         {helpWrap("10K+", "Satisfied Costumers All Great Over The World ")}
         {helpWrap("4M", "Healthy Dishes Sold Including Milk Shakes Smooth")}

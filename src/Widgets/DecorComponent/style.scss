@@ -2,12 +2,13 @@
 
 .decorComponent {
   position: relative;
-  display: inline-flex;
+  display: flex;
+  max-width: 683px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 100px 133px 85px 108px;
   box-sizing: border-box;
-  width: fit-content;
+  height: fit-content;
   &::after,
   &::before {
     opacity: 0;
@@ -17,15 +18,20 @@
   &::before {
     @include threeStrips1;
     top: 0;
-    right: 0;
+    right: -5%;
+    // z-index: -1;
   }
   &::after {
     @include threeStrips2;
-    bottom: 26px;
+    bottom: 0;
     left: -6px;
   }
 }
 .decorComponent__dishWrap {
+  max-width: 683px;
+  max-height: 609px;
+  width: 100%;
+  padding: 16% 19% 14% 16%;
   display: inline-flex;
   position: relative;
   z-index: 0;
@@ -39,32 +45,44 @@
   }
   &::before {
     border-radius: 50%;
-    top: -12px;
-    left: 20px;
-    right: -16px;
-    bottom: 28px;
+    // top: -12px;
+    // left: 20px;
+    // right: -16px;
+    // bottom: 28px;
+    top: 15%;
+    left: 19.5%;
+    right: 16.5%;
+    bottom: 18.5%;
     background-color: $primaryColor;
   }
   &::after {
     @include Spiralpfeil;
     height: 101px;
-    right: -66px;
-    top: 49px;
+    // right: -66px;
+    // top: 49px;
+    top: 23.5%;
+    right: 8%;
   }
 }
 .decorComponent__dish {
   z-index: 1;
+  width: 100%;
 }
 .decorComponent__graph {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 44%;
 }
-
-.decorComponent__purchase {
+.decorComponent__purchaseWrap {
+  width: 60%;
   position: absolute;
-  top: 28px;
-  right: 22px;
+  // top: 28px;
+  // right: 22px;
+  top: 3.5%;
+  right: 1.5%;
+}
+.decorComponent__purchase {
 }
 
 .decorComponent_isWithAdditionalElements {

@@ -16,7 +16,8 @@ const data: ReviewItem[] = [
     img: "https://live.verstaem.online/eatly/src/img/review/1.png",
     raiting: 5,
     date: "01 Year With Us",
-    content: "Aut nostrum provident eum.",
+    content:
+      "Dolor ipsum repudiandae sapiente sunt in praesentium tempore. Fuga magni accusamus cupiditate consequatur repellat enim corporis. Ad reiciendis cum.\nVoluptas nemo dignissimos velit ad accusantium vitae quia. Magnam magnam atque voluptatibus dignissimos deserunt nobis sunt. Quod quos assumenda modi. Similique deleniti animi reprehenderit sunt.\nReprehenderit magni expedita velit quasi incidunt rerum. Alias odio voluptatibus corrupti repellendus iusto. Molestias placeat iure possimus unde consequatur. Minima nihil provident. Sunt incidunt deleniti voluptatum.",
     id: "2",
   },
   {
@@ -24,7 +25,8 @@ const data: ReviewItem[] = [
     img: "https://live.verstaem.online/eatly/src/img/review/1.png",
     raiting: 3,
     date: "01 Year With Us",
-    content: "saepe quibusdam quasi",
+    content:
+      "Laudantium fuga amet id. Eos eum minima. Deserunt tempore eos debitis magnam consectetur. Veritatis fugiat eos. Facere ad ipsa placeat. Sint cum quos.",
     id: "3",
   },
   {

@@ -15,11 +15,8 @@ export const RestaurantsCardList = ({
     >
       {reviewItemsList.map((item) => {
         return (
-          <li key={item.id}>
-            <RestaurantCard
-              className="restaurantsCardList__item"
-              restaurantItem={item}
-            />
+          <li className="restaurantsCardList__item" key={item.id}>
+            <RestaurantCard restaurantItem={item} />
           </li>
         );
       })}

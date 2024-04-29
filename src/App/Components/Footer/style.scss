@@ -1,0 +1,118 @@
+@import "../../../Shared/Style/globalStyleVariables.scss";
+
+.footerApp {
+  display: flex;
+  width: 100%;
+  position: relative;
+  background-color: rgba(234, 234, 234, 1);
+  box-sizing: border-box;
+}
+.footerApp__containet {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 5%;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-areas:
+    "logo menu"
+    "separator separator"
+    "copyright socialList";
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__logo {
+  grid-area: logo;
+}
+.footerApp__menu {
+  grid-area: menu;
+
+  box-sizing: border-box;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  margin-right: -25px;
+}
+.footerApp__menuItem {
+  display: flex;
+}
+.footerApp__separator {
+  grid-area: separator;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(129, 129, 129, 0.25);
+  border: 0;
+}
+.footerApp__copyright {
+  grid-area: copyright;
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
+}
+.footerApp__socialList {
+  grid-area: socialList;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.footerApp__menuBtn {
+}
+
+@media (max-width: 1024px) {
+  .footerApp__containet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footerApp__copyright {
+    font-size: 12.09px;
+    line-height: 17.78px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerApp__containet {
+    padding-bottom: 35px;
+    grid-template-areas:
+      "logo socialList"
+      "menu menu"
+      "separator separator"
+      "copyright copyright";
+  }
+  .footerApp__menu {
+    flex-direction: row;
+    justify-content: center;
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+  .footerApp__menuItem {
+    text-transform: uppercase;
+  }
+  .footerApp__copyright {
+    font-size: 13.54px;
+    line-height: 19.91px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .footerApp__menu {
+    flex-direction: column;
+    align-items: start;
+
+    // margin-right: 0;
+  }
+}

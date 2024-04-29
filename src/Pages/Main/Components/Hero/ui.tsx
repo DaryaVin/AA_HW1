@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { Button, RateBox } from "../../../../Shared";
+import { Button, Header, RateBox, SpecHeader } from "../../../../Shared";
 import { DecorComponent } from "../../../../Widgets";
 import { HeroProps } from "./model";
 
@@ -10,10 +10,10 @@ export const Hero = ({ purchaseItem }: HeroProps) => {
       <div className="hero__info">
         <header className="hero__headerWrap">
           <span className="hero__subheader">OVER 1000 USERS</span>
-          <h1 className="hero__header">
+          <Header className="hero__header">
             Enjoy Foods All Over The{" "}
-            <span className="hero__specHeader">World</span>
-          </h1>
+            <SpecHeader className="hero__specHeader">World</SpecHeader>
+          </Header>
         </header>
         <p className="hero__text">
           EatLy help you set saving goals, earn cash back offers, Go to
@@ -51,7 +51,9 @@ export const Hero = ({ purchaseItem }: HeroProps) => {
           </div>
         </footer>
       </div>
-      <DecorComponent purchaseItem={purchaseItem} />
+      <div className="hero__img">
+        <DecorComponent purchaseItem={purchaseItem} />
+      </div>
     </section>
   );
 };

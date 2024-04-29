@@ -4,10 +4,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 37px;
+  gap: 5%;
+  position: relative;
 }
-
+.hero__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
 .hero__info {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,20 +47,12 @@
   }
 }
 .hero__header {
-  font-family: Poppins;
-  font-size: 75px;
-  font-weight: 600;
-  line-height: 90px;
-  letter-spacing: -3px;
-  text-align: left;
-  color: rgba(32, 31, 31, 1);
   margin-left: 0;
   margin-right: 0;
   margin-top: 18px;
   margin-bottom: 16px;
 }
 .hero__specHeader {
-  color: rgba(92, 78, 174, 1);
 }
 .hero__text {
   font-family: Inter;
@@ -62,13 +61,14 @@
   line-height: 28px;
   text-align: justify;
   color: rgba(103, 103, 103, 1);
+  @media (max-width: 1024px) {
+    font-size: 12.8px;
+    line-height: 19.91px;
+  }
 }
 .hero__specText {
   font-family: Inter;
-  font-size: 18px;
   font-weight: 500;
-  line-height: 28px;
-  text-align: justify;
   color: rgba(97, 85, 174, 1);
 }
 .hero__btnWrap {
@@ -78,6 +78,7 @@
   gap: 18px;
 }
 .hero__footer {
+  margin-top: 23px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -98,4 +99,64 @@
   line-height: 24px;
   text-align: left;
   color: rgba(51, 65, 85, 0.7);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero__text {
+    font-size: 12.8px;
+    line-height: 19.91px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+  }
+  .hero__img {
+    width: 100%;
+  }
+  .hero__info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__subheader {
+    font-size: 9.25px;
+    line-height: 11.1px;
+    letter-spacing: 1.23305082321167px;
+    color: rgba(32, 31, 31, 1);
+    position: relative;
+    padding-left: 75px;
+    text-align: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      left: calc(50% - 50px);
+      width: 54px;
+      height: 1px;
+      background-color: rgba(32, 31, 31, 1);
+    }
+  }
+  .hero__text {
+    font-size: 11.1px;
+    line-height: 17.26px;
+    text-align: center;
+  }
+  .hero__btnWrap {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .hero__footer {
+    width: 100%;
+    margin-top: 23px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }

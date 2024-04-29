@@ -7,7 +7,7 @@ import {
   PurchasesParametr,
   PurchasesParametrCard,
 } from "../../../../Entities/Purchases";
-import { Select } from "../../../../Shared";
+import { Header, Select, SpecHeader } from "../../../../Shared";
 
 export const Dashboard = () => {
   const [purchasesList, setPurchasesList] = useState<PurchaseItem[]>([]);
@@ -33,35 +33,41 @@ export const Dashboard = () => {
   return (
     <section className="dashboard">
       <div className="dashboard__purchaseWrap">
-        <h2 className="dashboard__header">
-          Premium <span className="dashboard__specHeader">Quality</span> For
-          Your Health
-        </h2>
-        <PurchaseCardsList purchaseItemsList={purchasesList} />
+        <Header number={2} className="dashboard__header">
+          Control{" "}
+          <SpecHeader className="dashboard__specHeader">Purchases </SpecHeader>
+          Via Dashboard
+        </Header>
+        <PurchaseCardsList
+          className="dashboard__purchaseList"
+          purchaseItemsList={purchasesList}
+        />
       </div>
-      <div className="dashboard_board">
-        <div className="dashboard__info">
-          <h3 className="dashboard__infoHead">Purchases</h3>
-          <Select className="dashboard__select" name="timeline">
-            <option className="dashboard__selectVal" value="mounth">
-              This mounth
-            </option>
-            <option className="dashboard__selectVal" value="week">
-              This week
-            </option>
-            <option className="dashboard__selectVal" value="year">
-              This year
-            </option>
-          </Select>
-        </div>
-        <PurchasesParametrCard
-          className="dashboard__param"
-          purchasesParametr={purchasesParametrArr[0]}
-        />
-        <PurchasesParametrCard
-          className="dashboard__param"
-          purchasesParametr={purchasesParametrArr[1]}
-        />
+      <div className="dashboard_boardWrap">
+        <article className="dashboard_board">
+          <div className="dashboard__info">
+            <h3 className="dashboard__infoHead">Purchases</h3>
+            <Select className="dashboard__select" name="timeline">
+              <option className="dashboard__selectVal" value="mounth">
+                This mounth
+              </option>
+              <option className="dashboard__selectVal" value="week">
+                This week
+              </option>
+              <option className="dashboard__selectVal" value="year">
+                This year
+              </option>
+            </Select>
+          </div>
+          <PurchasesParametrCard
+            className="dashboard__param"
+            purchasesParametr={purchasesParametrArr[0]}
+          />
+          <PurchasesParametrCard
+            className="dashboard__param"
+            purchasesParametr={purchasesParametrArr[1]}
+          />
+        </article>
       </div>
     </section>
   );

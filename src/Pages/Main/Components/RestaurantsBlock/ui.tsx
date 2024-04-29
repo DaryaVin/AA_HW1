@@ -5,7 +5,7 @@ import {
   RestaurantItem,
   restaurantsAPI,
 } from "../../../../Entities/Restaurants";
-import { Button } from "../../../../Shared";
+import { Button, Header, SpecHeader } from "../../../../Shared";
 
 export const RestaurantsBlock = () => {
   const [restaurantsList, setRestaurantsList] = useState<RestaurantItem[]>([]);
@@ -14,10 +14,12 @@ export const RestaurantsBlock = () => {
   }, []);
   return (
     <section className="restaurantsBlock">
-      <h2 className="restaurantsBlock__header">
+      <Header className="restaurantsBlock__header" number={2}>
         {"Our Top "}
-        <span className="restaurantsBlock__specHeader">Restaurants</span>
-      </h2>
+        <SpecHeader className="restaurantsBlock__specHeader">
+          Restaurants
+        </SpecHeader>
+      </Header>
       <RestaurantsCardList
         className="restaurantsBlock__list"
         reviewItemsList={restaurantsList}

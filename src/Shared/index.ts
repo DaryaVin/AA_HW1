@@ -6,6 +6,7 @@ import { RateBox } from "./UI/RateBox/ui";
 import { HealthCategory } from "./UI/HealthCategory/ui";
 import { Select } from "./UI/Select/ui";
 import { TimeRatingInfo } from "./UI/TimeRatingInfo/ui";
+import { Header, SpecHeader } from "./UI/Header/ui";
 
 import type { HealthCategoryType } from "./Model/generalType";
 import { templateAPI } from "./API/api";
@@ -20,5 +21,7 @@ export {
   HealthCategory,
   TimeRatingInfo,
   templateAPI,
+  Header,
+  SpecHeader,
 };
 export type { HealthCategoryType };

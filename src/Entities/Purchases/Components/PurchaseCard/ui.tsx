@@ -11,7 +11,9 @@ export const PurchaseCard = ({
   const newClassName = "purchaseCard" + (className ? " " + className : "");
   return (
     <article className={newClassName}>
-      <img className="purchaseCard__img" src={img} alt="Фото блюда" />
+      <div className="purchaseCard__imgWrap">
+        <img className="purchaseCard__img" src={img} alt="Фото блюда" />
+      </div>
       <div className="purchaseCard__infoWrap">
         <h3 className="purchaseCard__name">{name}</h3>
         <div

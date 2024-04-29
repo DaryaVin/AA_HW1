@@ -24,10 +24,12 @@ export const DecorComponent = ({
         <img className="decorComponent__dish" src={imgDish} />
       </div>
       <img className="decorComponent__graph" src={imgGraph} />
-      <PurchaseCard
-        className="decorComponent__purchase"
-        purchaseItem={purchaseItem}
-      />
+      <div className="decorComponent__purchaseWrap">
+        <PurchaseCard
+          className="decorComponent__purchase"
+          purchaseItem={purchaseItem}
+        />
+      </div>
     </div>
   );
 };

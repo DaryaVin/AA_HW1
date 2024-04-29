@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.scss";
 import { DishCardProps } from "./model";
-import { HealthCategory, TimeRatingInfo } from "../../../../Shared";
+import { Header, HealthCategory, TimeRatingInfo } from "../../../../Shared";
 
 export const DishCard = ({ dishItem, className }: DishCardProps) => {
   const { img, healthCategory, price, name, cookingTime, raiting } = dishItem;
@@ -62,12 +62,16 @@ export const DishCard = ({ dishItem, className }: DishCardProps) => {
           </svg>
         )}
       </button>
-      <img className="dishCard__img" src={img} alt="Фото блюда" />
-      <HealthCategory
-        healthCategory={healthCategory}
-        className="dishCard__healthCategory"
-      />
-      <h3 className="dishCard__name">{name}</h3>
+      <div className="dishCard__imgWrap">
+        <img className="dishCard__img" src={img} alt="Фото блюда" />
+        <HealthCategory
+          healthCategory={healthCategory}
+          className="dishCard__healthCategory"
+        />
+      </div>
+      <Header className="dishCard__name" number={3}>
+        {name}
+      </Header>
       <TimeRatingInfo
         className="dishCard__info"
         time={cookingTime}

@@ -3,7 +3,7 @@
 .restaurantCard {
   box-sizing: border-box;
   background-color: $baseColor;
-  width: 395.99px;
+  width: 100%;
   border-radius: 35px;
   border: 1.44px solid #f4f4f6;
   box-shadow: 6.85px 82.18px 41.09px 0px rgba(229, 229, 229, 0.7);
@@ -36,20 +36,22 @@
   text-align: left;
   margin: 0;
   color: #323142;
+  height: 37.5px;
+  overflow: hidden;
 }
 .restaurantCard__info {
 }
 
 .restaurantCard__likeBtn {
   position: absolute;
-  bottom: 23px;
-  right: 23px;
+  bottom: 16px;
+  right: 16px;
   border: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: $primaryColor_superLight;
   color: $bcgColor_dark;
@@ -58,4 +60,11 @@
 
 .restaurantCard__likeBtn_isLike {
   color: $primaryColor;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 375px) {
 }

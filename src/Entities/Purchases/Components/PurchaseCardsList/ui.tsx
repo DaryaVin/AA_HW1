@@ -15,11 +15,8 @@ export const PurchaseCardsList = ({
     >
       {purchaseItemsList.map((item) => {
         return (
-          <li key={item.id}>
-            <PurchaseCard
-              className="purchaseCardList__item"
-              purchaseItem={item}
-            />
+          <li className="purchaseCardList__item" key={item.id}>
+            <PurchaseCard purchaseItem={item} />
           </li>
         );
       })}

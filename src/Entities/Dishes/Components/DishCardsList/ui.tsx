@@ -15,8 +15,8 @@ export const DishCardsList = ({
     >
       {dishItemsList.map((item) => {
         return (
-          <li key={item.id}>
-            <DishCard className="dishCardsList__item" dishItem={item} />
+          <li className="dishCardsList__item" key={item.id}>
+            <DishCard dishItem={item} />
           </li>
         );
       })}

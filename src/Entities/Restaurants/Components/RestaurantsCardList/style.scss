@@ -4,5 +4,32 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   list-style-type: none;
+  gap: 30px;
+}
+
+.restaurantsCardList__item {
+  width: 33%;
+}
+
+@media (max-width: 1024px) {
+  .restaurantsCardList {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .restaurantsCardList__item {
+    min-width: 260px;
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .restaurantsCardList {
+    flex-direction: column;
+  }
+  .restaurantsCardList__item {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
 }

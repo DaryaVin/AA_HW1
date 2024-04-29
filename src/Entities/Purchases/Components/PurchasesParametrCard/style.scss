@@ -6,8 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 458.61px;
-  height: 135.07px;
+  width: 100%;
   padding: 25.13px;
   box-sizing: border-box;
   color: #1a202c;
@@ -90,5 +89,54 @@
   background-color: rgba(251, 173, 24, 0.2);
   .purchasesParametrCard__propgressLine {
     background-color: rgba(251, 173, 24, 1);
+  }
+}
+
+@media (max-width: 768px) {
+  .purchasesParametrCard__icon {
+    width: 40px;
+    height: 40px;
+    padding-left: 1px;
+  }
+  .purchasesParametrCard__name {
+    font-size: 13.4px;
+    line-height: 20.1px;
+    letter-spacing: 0.4467450678348541px;
+  }
+
+  .purchasesParametrCard__description {
+    font-size: 11.17px;
+    line-height: 16.75px;
+    letter-spacing: 0.4467450678348541px;
+  }
+
+  .purchasesParametrCard__price {
+    font-size: 15.64px;
+    line-height: 23.45px;
+    letter-spacing: 0.22337253391742706px;
+  }
+}
+@media (max-width: 375px) {
+  .purchasesParametrCard__icon {
+    width: 30px;
+    height: 30px;
+    padding-left: 0.5px;
+  }
+  .purchasesParametrCard__name {
+    font-size: 11.16px;
+    line-height: 16.75px;
+    letter-spacing: 0.3721460998058319px;
+  }
+
+  .purchasesParametrCard__description {
+    font-size: 9.3px;
+    line-height: 13.96px;
+    letter-spacing: 0.3721460998058319px;
+  }
+
+  .purchasesParametrCard__price {
+    font-size: 13.03px;
+    line-height: 19.54px;
+    letter-spacing: 0.18607304990291595px;
   }
 }

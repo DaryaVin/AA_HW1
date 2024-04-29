@@ -2,11 +2,15 @@
 
 .reviewCardList {
   position: relative;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 336px;
 }
 .reviewCardList__gallery {
   width: 100%;
+  position: relative;
+  height: 336px;
 }
 .reviewCardList__reviewsList {
   list-style-type: none;
@@ -15,8 +19,8 @@
   gap: 46px;
   margin-top: 0;
   margin-bottom: 0;
-  // margin-left: -620px;
   transition: margin 1s ease;
+
   padding: 0;
 }
 .reviewCardList__item {
@@ -29,6 +33,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  padding: 0;
 }
 .reviewCardList__dot {
   margin: 0;
@@ -37,9 +42,37 @@
 }
 .reviewCardList__dotBtn {
   height: 11px;
-  background-color: $primaryColor;
   border-radius: 50px;
+  background-color: $primaryColor_light;
   border: 0;
   outline-color: $accentColor;
   width: 100%;
+  cursor: pointer;
+}
+.reviewCardList__dotBtn_current {
+  background-color: $primaryColor;
+}
+
+@media (max-width: 1024px) {
+  .reviewCardList__dotsList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .reviewCardList__gallery {
+    width: 100%;
+    position: relative;
+    height: 210px;
+  }
+  .reviewCardList__reviewsList {
+    gap: 26px;
+  }
+}
+@media (max-width: 375px) {
 }
